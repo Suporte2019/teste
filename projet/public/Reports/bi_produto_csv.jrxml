@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="bi_produto" pageWidth="595" pageHeight="842" whenNoDataType="NoPages" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="65ea4387-f3c2-44fe-85f8-caa3e0eec35b">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="desenv_prosim"/>
+	<property name="com.jaspersoft.studio.report.description" value=""/>
+	<queryString language="SQL">
+		<![CDATA[select * from bi_prod]]>
+	</queryString>
+	<field name="id_item" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="id_item"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bi_prod"/>
+	</field>
+	<field name="id_grupo" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="id_grupo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bi_prod"/>
+	</field>
+	<field name="nome" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="nome"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bi_prod"/>
+	</field>
+	<field name="ativo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="ativo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bi_prod"/>
+	</field>
+	<field name="dt_alt" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="dt_alt"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bi_prod"/>
+	</field>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="65"/>
+	</title>
+	<pageHeader>
+		<band height="18"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="25"/>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="-110" width="61" height="20" uuid="ece30e33-cb57-4ad1-b3a8-697a2bfc7158">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d699c9bb-a022-47bc-ae17-fe1581c7ffd6"/>
+				</reportElement>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_item}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="61" y="-110" width="59" height="20" uuid="8a06f73f-9b62-416f-b25c-4eb0aba77906">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="35d44edf-4f4f-4d56-81a8-e18cc822e021"/>
+				</reportElement>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_grupo}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="135" y="-110" width="285" height="20" uuid="56b06a0e-3fc7-4931-9c59-462dfabd3b26">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7b452ee2-d6ac-4cfb-b337-5307f5c25df9"/>
+				</reportElement>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="430" y="-110" width="44" height="20" uuid="def369a9-dd48-495d-a636-0648c570f91e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a9f9ae98-ccf7-4a26-a683-5f3d68c6113e"/>
+				</reportElement>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ativo}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="480" y="-110" width="95" height="20" uuid="cc79017d-8614-4483-813e-21476f1d6159">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1af5712e-ab5f-4649-aea2-71da0294bd4b"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dt_alt}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17"/>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
